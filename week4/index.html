@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <title>Reggie's Coffee Shop - Home</title>
@@ -7,16 +8,25 @@
 
 <body>
     <!--This is an HTML comment-->
-    <!--
-        command/ctrl + / to add or remove command
+    <!--command/ctrl + / to add or remove comment-->
 
-     -->
+    <!-- Site Header -->
     <header>
         <h1>Reggie's Coffee Shop</h1>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header
     <main>
+        <!-- Adding an on page link -->
+        <a href="#treatoftheweek">Treat of the Week</a>
         <article>
             <h2>Our Story</h2>
+            <!-- Adding an image -->
+            <img src="./images/coffee-shop.jpg" alt="Coffee cup on a pile of coffee beans" title="Coffee cup on a pile of beans">
             <p>
                 We are a <em>family own business</em>. Reggie is the
                 <abbr title="Chief Executive Officer">CEO</abbr> and head
@@ -24,6 +34,8 @@
                 charge of the bake shop. Celebrating their 10 <sup>th</sup>
                 anniversary together in March 2024.
             </p>
+        </article>
+    </main>
             <blockquote>
                 We love coffe! <cite>- Reggie and Maria</cite>
             </blockquote>
@@ -34,7 +46,6 @@
                     We are a local coffe shop based in Ottawa. Our specialty is <b>Organic fair-trade</b> coffee.
                 </p>
             </section>
-        </article>
         <aside>
             <h3>Merchandise</h3>
             <!--Adding an unorder list -->
@@ -53,7 +64,7 @@
             </ol>
         </section>
         <!-- Adding a section for a description list -->
-        <section>
+        <section id="treatoftheweek">
             <h3>Treat of the Week</h3>
             <dl>
                 <dt>Name</dt>
@@ -76,6 +87,8 @@
                     </ul>
                 </dd>
             </dl>
+            <!-- Adding an external link -->
+            <a href="https://www.allrecipes.com/recipe/20144/banana-banana-bread/" target="_blank">Get the recipe</a>
         </section>
     </main>
     <!-- Site Footer -->
