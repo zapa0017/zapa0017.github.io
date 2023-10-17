@@ -2,11 +2,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color:darkslategray;
+    background-image: url(../images/white_brick_wall.png);
 }
-h1{
+
+h1 {
     color: cadetblue;
 }
-p{
+p {
     background-color: antiquewhite;
 }
 
@@ -30,7 +32,21 @@ nav ul a {
 /* Selecting element with ID value */
 /* As a best practice, avoid using ID for styles */
 #treatoftheweek {
-    background-color: cadetblue;
+    /* color image repeat position-x position-y */
+    background: cadetblue url(../images/bread.jpg) 
+    no-repeat center;
+    /* background-size */
+    background-size: cover;
+    font-size: 1.25rem;
+    /* 16px x 1.25 = 20px */
+    /* padding pushes the element away from the walls */
+    padding:1em;
+    /* 1em x 20px(element font size) = 20px */
+    /* 1em is based on font size value fo that element=20 */
+    width: 50;
+    /* height is 100% of the browser size and it is dynamic=it moves, changes the size of the image */
+    /* height: 100vh; */
+
 }
 
 /* Selecting HTML elements with class name */
@@ -51,6 +67,12 @@ nav ul a {
 
 article>p {
     font-size: 24px; 
+
+    /* CSS typography properties */
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
 }
 
 /* Adjacent siblind selector - selects the element that is the very next sibling to the selected, IF any exist */
@@ -59,7 +81,7 @@ h3+ul {
 }
 
 /* Sibling selector */
-h3~p {
+h3~ul {
     text-transform: uppercase;
 }
 
