@@ -126,6 +126,17 @@ table td:nth-child(2n+1) {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* CSS Specificity  */
 /* formula: inline style, ID, class, tag-name */
 /*                   0     0    0        0    */
