@@ -4,6 +4,27 @@ body {
     color:darkslategray;
     background-image: url(../images/white_brick_wall.png);
 }
+/* Box model example */
+section {
+    width: 50%;
+    /*single value = top/bottom/left/right like a square */
+    /* 2 values = first value = top/bottom, second value = left/right */
+    padding: 1em .5em;
+    /* 1em is 1st value - .5em is 2nd value */
+    margin: -1em 2em 2em 2em;
+    /* It says: top right bottom left. It goes clockwise */
+    /* can be specific by typing margin-bottom,etc */
+}
+.container {
+    /* create a container containing everything inside the body tag */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    /* 100% means images adjust no matter what size you go to */
+}
 
 h1 {
     color: cadetblue;
@@ -24,8 +45,16 @@ nav ul {
     list-style: none;
 }
 
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
 /* Selecting child elements multiple levels */
 nav ul a {
+    display: block;
     color: darkslategray;
     text-decoration: none;
 }
@@ -51,12 +80,35 @@ nav ul a {
 
 /* Selecting HTML elements with class name */
 .blue-link {
+    padding: 1.5em;
+    width:300px;
+    display: block;
     background-color: darkslategrey;
     color: antiquewhite;
     text-decoration: none;
 }
 .large text {
     font-size: 24 px;
+}
+/* example of float */
+article,
+aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside {
+    width: 20%;
+    /* cant have 2 80% side by side */
+
+}
+/* clear float from the section */
+section {
+    clear: both;
 }
 
 .white-text {
@@ -147,18 +199,6 @@ table td:nth-child(n) {
 table td:nth-child(2n+1) {
     background-color: rgba(0, 0, 0, 0.2);
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /* CSS Specificity  */
 /* formula: inline style, ID, class, tag-name */
 /*                   0     0    0        0    */
