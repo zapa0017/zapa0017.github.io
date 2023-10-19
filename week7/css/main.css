@@ -1,37 +1,52 @@
 /* This is a CSS comment Shortcut for adding the comment is command/ctrl + / */
+
 body {
+    padding-top: 92px;
     font-family: Arial, Helvetica, sans-serif;
-    color:darkslategray;
+    color: darkslategray;
+    /* Adding background image */
     background-image: url(../images/white_brick_wall.png);
 }
+
+
 /* Box model example */
-section {
+section p {
     width: 50%;
-    /*single value = top/bottom/left/right like a square */
-    /* 2 values = first value = top/bottom, second value = left/right */
-    padding: 1em .5em;
+    /*single value = top/bottom/left/right - like a square */
+    /* 2 values - 1st value = top/bottom, 2nd value = left/right */
+    padding: 1em 0.5em;
+    /* top right - bottom left */
     /* 1em is 1st value - .5em is 2nd value */
     margin: -1em 2em 2em 2em;
     /* It says: top right bottom left. It goes clockwise */
     /* can be specific by typing margin-bottom,etc */
+    border-bottom: 2px solid black;
 }
+
+
 .container {
-    /* create a container containing everything inside the body tag */
+    /* Always create a container containing everything inside the body tag */
     max-width: 1200px;
+    /* top/bottom & left/right */
     margin: 0 auto;
 }
+
 
 img {
     width: 100%;
     /* 100% means images adjust no matter what size you go to */
 }
 
+
 h1 {
     color: cadetblue;
 }
+
+
 p {
     background-color: antiquewhite;
 }
+
 
 /* Selecting multiple elements */
 h1, h2, h3, h4 {
@@ -45,6 +60,7 @@ nav ul {
     list-style: none;
 }
 
+
 nav ul li {
     display: inline-block;
     width: 49%;
@@ -52,18 +68,22 @@ nav ul li {
     box-sizing: border-box;
 }
 
+
 /* Selecting child elements multiple levels */
 nav ul a {
     display: block;
     color: darkslategray;
     text-decoration: none;
+    font-size: 1.5rem;
+/* 1.5rem = 1.5 x 16px = 24px */
 }
+
+
 /* Selecting element with ID value */
 /* As a best practice, avoid using ID for styles */
-#treatoftheweek {
+#treatofweek {
     /* color image repeat position-x position-y */
-    background: cadetblue url(../images/bread.jpg) 
-    no-repeat center;
+    background: cadetblue url(../images/bread.jpg) no-repeat center;
     /* background-size */
     background-size: cover;
     font-size: 1.25rem;
@@ -90,26 +110,32 @@ nav ul a {
 .large text {
     font-size: 24 px;
 }
+
+
 /* example of float */
 article,
 aside {
     width: 80%;
     background-color: rgba(255, 255, 255, 0.6);
     border: 1px solid black;
-    padding: 1.5rem;
+    padding: 1.5em;
     box-sizing: border-box;
     float: left;
 }
+
 
 aside {
     width: 20%;
     /* cant have 2 80% side by side */
 
 }
+
+
 /* clear float from the section */
 section {
     clear: both;
 }
+
 
 .white-text {
     color: antiquewhite;
@@ -117,34 +143,45 @@ section {
 /* Combinators */
 /* Direct child selector - will only select direct child of the parent */
 
+ /* CSS typography properties */
 article>p {
     font-size: 24px; 
-
-    /* CSS typography properties */
     font-weight: bold;
     line-height: 1.5;
     text-transform: lowercase;
     text-align: center;
 }
 
+
 /* Adjacent siblind selector - selects the element that is the very next sibling to the selected, IF any exist */
 h3+ul {
     border: 1px solid black;
 }
+
 
 /* Sibling selector */
 h3~ul {
     text-transform: uppercase;
 }
 
+
 /* Attribute Selector */
 [href="#treatoftheweek"] {
     font-weight: bold;
+    font-size: 24px;
 }
 
+/* [src="./images/coffee-shop.jpg"] {
+ border: 4px solid darkslategray;
+} */
 [src$="jpg"] {
     border: 4px solid darkslategray;
 }
+
+
+/* Fixed navigation - Prof code following: */
+
+/* Prof code listed above-may erase? */
 
 /* psuedo classes */
 /* Styling the navigation */
@@ -155,6 +192,7 @@ nav ul a:visited {
     /* horizontal, vertical, blur, spread, color */
     box-shadow: -2px 2px 4px 2px black;
 }
+
 
 /* add class of current to HTML home link after adding hover and focus */
 nav ul .current, 
@@ -167,14 +205,17 @@ nav ul a:active {
     box-shadow: 0 0 4px 2px black;
 }
 
+/* Position Selectors */
 /* first child and last child */
-aside ul li {
+aside ul li:first-child {
     font-weight: bold;
 }
 
-section ol li:last child {
+
+section ol li:last-child {
     font-weight: bold;
 }
+
 
 /* styling a table */
 table {
@@ -213,7 +254,7 @@ body footer {
 
 /* site tag numer: 0011 */ 
 footer.site-footer {
-    background-color: antiquewhite;
+    background-color: red;
 }
 /* 0100 */
 #treatoftheweek {
