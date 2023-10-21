@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
+    font-size: 20px;
+}
+
+.container {
+    /* Always create a container containing everything inside the body tag */
+    max-width: 1023px;
+    /* top/bottom & left/right */
+    margin: 0 auto;
+    background-color: #cbf0ec;
+}
+
+img {
+    width: 100%;
+    /* 100% means images adjust no matter what size you go to */
+}
+
+.site-title {
+    color: white;   
+    position:absolute;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+
+
+
