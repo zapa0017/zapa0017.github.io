@@ -2,29 +2,74 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #aad4cf;
     font-size: 20px;
+    
 }
 
 .container {
-    /* Always create a container containing everything inside the body tag */
     max-width: 1023px;
-    /* top/bottom & left/right */
     margin: 0 auto;
-    background-color: #cbf0ec;
+    background-color: #d4f5f2;
+    
 }
 
-img {
-    width: 100%;
-    /* 100% means images adjust no matter what size you go to */
+
+
+h1 {
+background-image:url(../images/lone-starfish-wide.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+padding: 200px;
+font-size: 64px;
+color: white;
+text-align: center;
+margin: 10px;
 }
 
-.site-title {
-    color: white;   
-    position:absolute;
+
+nav ul a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}    
+
+
+nav ul li {
+    display: inline-block;
+    width: 32%;
+    padding: 0.1em;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-.nav-list {
-    list-style-type: none;
-}
+/* image */
+
+  img{
+    width: 255px;
+    float: left;
+    margin-top: 0em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+  }
+
+  p{
+    font-size: 17px;
+  }
+
+  h2{
+    font-size: 30px;
+
+  }
+
+
+
+
+
+
+
+
+
 
 
 
