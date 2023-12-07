@@ -1,0 +1,245 @@
+/********** BODY *********/
+
+body {
+  margin: 0;
+  font-family: 'open sans';
+}
+
+/********** HEADER *********/
+
+.header {
+  overflow: hidden;
+  background-color: #222;
+}
+
+.mobile-logo {
+  float: left;
+  padding: 35px;
+  padding-left: 150px;
+  padding-right: 70px;
+}
+
+/********** NAV *********/
+
+.topnav a {
+  margin-top: 55px;
+  display: inline-block;
+  color: #c78c06;
+  text-align: center;
+  padding: 20px 45px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav a:hover,
+.topnav a.active {
+  background-color: #c78c06;
+  color: black;
+}
+
+.topnav .search-container {
+  float: right;
+  margin-right: 150px;
+}
+
+.topnav input[type=text] {
+  padding: 10px;
+  margin-top: 60px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  padding: 8px 9px;
+  background: #222;
+  font-size: 20px;
+  color: #c78c06;
+  border: 1px solid #c78c06;
+}
+
+/********** MAIN BANNER *********/
+.welcomebanner {
+  background-image: url(../images/main-banner.jpg);
+  background-size: 100%;
+  background-position: center; /* Adjustebanner image position */
+  position: relative;
+  height: 695px; /* Adjusted height */
+  width: 100%;
+}
+
+.welcome-content {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-left: 8.3%;
+  margin-right: 8.3%;
+  margin-top: 3%;
+  padding-bottom: 9%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 1em; /* paddint left for spacing between text and background color */
+}
+
+.welcome-content h1 {
+  font-size: 100px; 
+  color: white;
+  margin-bottom: 1%;
+}
+
+.welcome-content p {
+  color: white;
+  font-size: 19px;
+}
+
+.button-connect {
+  position: absolute;
+  bottom: 0.6em; 
+  left: 0.6em;
+  padding-left: 1.5em; 
+  width: 310px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  background-color: #c78c06;
+  color: #222;
+  text-decoration: none;
+  font-size: 27px;
+}
+
+.button-connect i {
+  margin-left: 30px; /* Adjusted margin for better spacing */
+  font-size: 25px;
+  padding-right: 1.5em;;
+}
+
+/********** ABOUT US SECTION *********/
+
+/* background color same size as nav and banner img */
+.wrapper-about {
+  background-color: #ffe6ac;
+  max-width: 1200%;
+}
+
+/* Flex allows us to move our contect the way we want to */
+.wrapper-about {
+  display: flex;
+
+}
+
+.about-div {
+  display: flex;
+}
+
+/* image */
+.about-div img {
+  height: 300px;
+  width: 1460px; /* Set the width to your desired size */
+  padding: 20px 1em 20px 160px; /* Top, Right, Bottom, Left */
+}
+
+
+
+/* About us heading spacing and font size */
+.about-div h2 {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* About us paragraph spacing and font size*/
+.about-div p {
+  padding-right: 30%;
+  font-size: 18px;
+}
+
+
+/********** OUR SERVICES SECTION *********/
+/**************************
+      Custom Card Styles - Desktop
+***************************/
+/********** ABOUT US SECTION *********/
+
+/* Background color same size as nav and banner img */
+.wrapper-about {
+  background-color: #ffe6ac;
+  max-width: 1200%;
+}
+
+/* Flex allows us to move our content the way we want to */
+.wrapper-about {
+  display: flex;
+}
+
+.about-div {
+  display: flex;
+}
+
+/* Image */
+.about-div img {
+  height: 300px;
+  width: 1460px; /* Set the width to your desired size */
+  padding: 20px 1em 20px 160px; /* Top, Right, Bottom, Left */
+}
+
+/* About us heading spacing and font size */
+.about-div h2 {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* About us paragraph spacing and font size*/
+.about-div p {
+  padding-right: 30%;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************
+      Custom Card Styles - Mobile
+***************************/
+@media screen and (max-width: 799px) {
+  .card {
+    border: 2px solid #00add8;
+    border-radius: 6px;
+    margin-bottom: 1em;
+  }
+
+  .card img {
+    width: 100%;
+    border-bottom: 2px solid #00add8;
+    border-radius: 6px 6px 0 0; /* Rounded corners only at the top */
+  }
+
+  .card .info {
+    padding: 1em;
+  }
+
+  .card h3 {
+    margin-top: 0;
+  }
+}

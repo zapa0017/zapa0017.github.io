@@ -1,0 +1,44 @@
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.button {
+    padding: 1.5em;
+    width:300px;
+    display: block;
+    background-color: darkslategrey;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+
+/* all classes for each section */
+header, main {
+    max-width: 1200px;
+    margin: 0 auto; 
+    background-color: aqua;
+}
+
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fa-solid {
+    font-size: 6rem;
+    color: darkolivegreen;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block; 
+    /* display block if margin 0 auto doesnt work */
+}
