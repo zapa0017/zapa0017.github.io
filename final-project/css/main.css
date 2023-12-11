@@ -63,16 +63,17 @@ body {
   background-size: 100%;
   background-position: center; /* Adjustebanner image position */
   position: relative;
-  height: 695px; /* Adjusted height */
+  height: 529px; /* Adjusted height */
   width: 100%;
 }
 
+/* Transparent black background */
 .welcome-content {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
   margin-left: 8.3%;
   margin-right: 8.3%;
-  margin-top: 3%;
+  margin-top: 3.4%;
   padding-bottom: 9%;
   display: flex;
   flex-direction: column;
@@ -80,35 +81,38 @@ body {
 }
 
 .welcome-content h1 {
-  font-size: 100px; 
+  font-size: 75px; 
   color: white;
   margin-bottom: 1%;
 }
 
 .welcome-content p {
   color: white;
-  font-size: 19px;
+  font-size: 14px;
 }
 
+/* Styling connect with us button */
 .button-connect {
   position: absolute;
   bottom: 0.6em; 
   left: 0.6em;
   padding-left: 1.5em; 
-  width: 310px;
-  height: 130px;
+  width: 220px;
+  height: 92px;
   display: flex;
   align-items: center;
   background-color: #c78c06;
   color: #222;
   text-decoration: none;
-  font-size: 27px;
+  font-size: 20px;
 }
 
+/* Styling arrow icon */
 .button-connect i {
-  margin-left: 30px; /* Adjusted margin for better spacing */
-  font-size: 25px;
+  margin-left: 25px; /* Adjusted margin for better spacing */
+  font-size: 20px;
   padding-right: 1.5em;;
+  padding-bottom: 0.3em;
 }
 
 /********** ABOUT US SECTION *********/
@@ -129,18 +133,11 @@ body {
   display: flex;
 }
 
-/* image */
-.about-div img {
-  height: 300px;
-  width: 1460px; /* Set the width to your desired size */
-  padding: 20px 1em 20px 160px; /* Top, Right, Bottom, Left */
-}
-
 
 
 /* About us heading spacing and font size */
 .about-div h2 {
-  font-size: 60px;
+  font-size: 75px;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -152,37 +149,21 @@ body {
 }
 
 
-/********** OUR SERVICES SECTION *********/
-/**************************
-      Custom Card Styles - Desktop
-***************************/
-/********** ABOUT US SECTION *********/
-
-/* Background color same size as nav and banner img */
-.wrapper-about {
-  background-color: #ffe6ac;
-  max-width: 1200%;
-}
-
-/* Flex allows us to move our content the way we want to */
-.wrapper-about {
-  display: flex;
-}
-
-.about-div {
-  display: flex;
-}
 
 /* Image */
 .about-div img {
-  height: 300px;
-  width: 1460px; /* Set the width to your desired size */
-  padding: 20px 1em 20px 160px; /* Top, Right, Bottom, Left */
+  height: 250px;
+  width: 1145px; 
+  padding-top: 0.8em;
+  padding-left:120px;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  
 }
 
 /* About us heading spacing and font size */
 .about-div h2 {
-  font-size: 60px;
+  font-size:45px;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -190,56 +171,206 @@ body {
 /* About us paragraph spacing and font size*/
 .about-div p {
   padding-right: 30%;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 
 
+/* Styling all cards the same */
+.wrapper-services {
+  padding-left: 120px;
+  padding-right: 100px;
+}
 
+.wrapper-services h2 {
+  margin-bottom: 6px;
+  margin-top: 25px;
+  font-size: 47px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**************************
-      Custom Card Styles - Mobile
-***************************/
-@media screen and (max-width: 799px) {
-  .card {
-    border: 2px solid #00add8;
-    border-radius: 6px;
+.card {
+    background-color: #ffe6ac;
     margin-bottom: 1em;
-  }
+    width:48.5%;
+}
 
   .card img {
     width: 100%;
-    border-bottom: 2px solid #00add8;
-    border-radius: 6px 6px 0 0; /* Rounded corners only at the top */
   }
+  
 
   .card .info {
     padding: 1em;
   }
 
   .card h3 {
+    font-size: 31px;
     margin-top: 0;
   }
+
+  .card p {
+    font-size: 14px;
+  }
+
+/* Digital and Marketing cards next to eachother on desktop style */
+  .cards {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em; 
+    padding-left: 120px;
+    padding-right: 91px;
+}
+
+
+
+/* Styling digital and marketing card buttons */
+
+.buttoncard- {
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    display: inline-block;
+    padding: 30px;
+    width: 92%;
+    height: 210%;
+    background-color: #222;
+    color: white;
+    padding-right: 7px;
+}
+
+.buttoncard- i {
+ padding-left: 15px;  
+ 
+}
+
+
+.buttoncard-:hover,
+.buttoncard-:focus {
+    background-color: #c78c06;
+    color: inherit;
+}
+
+
+
+.cards2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+
+.cards2 {
+  padding-left: 120px;
+  padding-right: 107px;
+}
+
+
+/* Adjusted width for video, web, and print cards */
+.card.card3 {
+  width: 100%; /* Adjust the width as needed */
+}
+
+.card.card4 {
+  width: 100%; /* Adjust the width as needed */
+}
+
+.card.card5 {
+  width: 100%; /* Adjust the width as needed */
+}
+
+/* Styling buttons for video, web and print */
+.buttoncard-2 {
+  padding-right: 1px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+    display: inline-block;
+    padding: 30px;
+    width: 88%;
+    height: 210%;
+    background-color: #222;
+    color: white;
+    padding-right: 7px;
+}
+
+.buttoncard-2 i {
+ padding-left: 15px;  
+ 
+}
+
+
+.buttoncard-2:hover,
+.buttoncard-2:focus {
+    background-color: #c78c06;
+    color: inherit;
+}
+
+.services-div h2 {
+  padding-left: 120px;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+
+/********** SECOND BANNER *********/
+
+.vision-div {
+  background-image: url(../images/vision.jpg);
+  background-size: 100%;
+  background-position: center; /* Adjustebanner image position */
+  position: relative;
+  height: 260px; /* Adjusted height */
+  width: 100%;
+  color: white;
+
+
+}
+
+.vision-div p {
+  font-size: 14px;
+  padding-left: 120px;
+  padding-right: 115px;
+  padding-bottom: 32px;
+}
+
+.vision-div h2 {
+  padding-top: 32px;
+  padding-left: 120px;
+  font-size: 32px;
+}
+
+
+
+/* Styling button for Our Vision */
+.button-vision {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-left: 120px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #c78c06;
+  padding: 30px;
+  font-size: 23px;
+}
+
+
+
+.button-vision i {
+ padding-left: 15px;  
+ 
+}
+
+
+.button-vision:hover,
+.button-vision:focus {
+    background-color: #c78c06;
+    color: inherit;
+}
+
+/* OUR TEAM */
+
+.wrapper-team h2{
+  font-size: 50px;
+  padding-left: 120px;
+  margin-top: 20px;
+  margin-bottom: 2px;
 }
