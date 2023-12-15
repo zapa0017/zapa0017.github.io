@@ -702,7 +702,6 @@ th {
 
 .cards {
   display: flex;
-  flex-wrap: row;
   padding-left: 63px;
   padding-right: 45px;
   justify-content: space-between; /* Added to ensure space between cards */
@@ -928,7 +927,5 @@ th {
   color: #c78c06;
   padding-left: 63px;
 }
-
-
 
 }
