@@ -1,87 +1,602 @@
-/********** BODY *********/
 
+/* Mobile styles*/
 body {
-  margin: 0;
-  font-family: 'open sans';
-}
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 100%;
+    overflow-x: hidden; /* This will hide horizontal overflow */
+  }
 
-/********** HEADER *********/
-
-.header {
-  overflow: hidden;
-  background-color: #222;
-}
-
+/* NAV */
 .mobile-logo {
+  background-color: #c78c06;
   float: left;
-  padding: 35px;
-  padding-left: 150px;
-  padding-right: 70px;
+  padding-right: 78.5%;
+  padding-bottom: 8%;
+  margin-top: 1.3em;
+  margin-left: 0.7em;
 }
 
-/********** NAV *********/
+.topnav {
+  background-color: #222;
+  padding-top: 100px;
+  margin-left: -2%;
+  margin-top: -2%;
+  width: 104%;
+  height: 326px;
+}
+
 
 .topnav a {
-  margin-top: 55px;
-  display: inline-block;
+  text-decoration: none;
   color: #c78c06;
   text-align: center;
-  padding: 20px 45px;
-  text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
+  padding: 10px;
 }
 
-.topnav a:hover,
+.topnav a,
+.topnav :link,
+.topnav a:visited {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style for the active link when not clicked yet */
+.topnav a:active,
 .topnav a.active {
   background-color: #c78c06;
   color: black;
+  margin-left: 4.1%;
+  margin-right: 4.1%;
+}
+
+/* search bar */
+
+.topnav .search-container {
+  margin-top: auto; /* Push the search bar to the bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .topnav .search-container {
-  float: right;
-  margin-right: 150px;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
 }
-
+/* styling the text area */
 .topnav input[type=text] {
-  padding: 10px;
-  margin-top: 60px;
-  font-size: 17px;
+  padding: 6px;
+  font-size: 14px;
   border: none;
+  width: 430px;
+  margin-top: 5px;
+  
 }
-
+/* Styling the button */
 .topnav .search-container button {
-  padding: 8px 9px;
+  padding: 5px 5px;
   background: #222;
-  font-size: 20px;
+  font-size: 17px;
   color: #c78c06;
   border: 1px solid #c78c06;
 }
 
-/********** MAIN BANNER *********/
+
+
+/* Main banner styles for mobile */
 .welcomebanner {
   background-image: url(../images/main-banner.jpg);
-  background-size: 100%;
-  background-position: center; /* Adjustebanner image position */
+  background-position: center;
+  background-size: cover;
   position: relative;
-  height: 529px; /* Adjusted height */
+  height: 435px;
   width: 100%;
 }
 
-/* Transparent black background */
+
+.welcome-content {
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 300px;
+}
+
+
+.welcome-content {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 76%;
+  margin-left: 0;
+  margin-top: 11%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px; /* Add 2px left padding */
+  padding-right: 8px; /* Add 2px right padding */
+
+}
+
+.welcome-content h1 {
+  font-size: 51px;
+  color: white;
+  margin-bottom: 3%;
+  line-height: 1.5em; /* line heat adjusts the space between lines of text */
+}
+
+.welcome-content p {
+  color: white;
+  font-size: 10.1px;
+  padding-right: 15px;
+  margin-top: 0;
+}
+
+
+/* button */
+.button-connect {
+  position: absolute;
+  padding-left: 2em;
+  width: 154px;
+  height: 68px;
+  bottom: 9px; /* Align the button to the bottom */
+  display: flex;
+  align-items: center;
+  background-color: #c78c06;
+  color: #222;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.button-connect i {
+  font-size: 15px;
+  padding-right: 1.5em;
+  padding-bottom: 0.3em;
+}
+
+
+/* About section */
+.about-div {
+  flex-direction: column;
+  background-color: #ffe6ac;
+  padding-bottom: 10px;
+}
+
+.about-div h2 {
+font-size: 33px;
+margin-bottom: 0;
+padding-left: 2%;
+margin-top: 0;
+}
+
+.about-div p {
+padding-left: 1em;
+font-size: 9.3px;
+padding-right: 1em;
+}
+
+
+.about-div img {
+width: 100%;
+padding-bottom: 20px;
+padding-left: 2%;
+padding-top: 2%;
+  
+}
+
+/* Our services cards */
+.services-div h2 {
+  padding-left: 10px;
+  font-size: 33px;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #ffe6ac;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.cards img {
+  width: 100%;
+}
+
+.cards2 img {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cards {
+  display: block;
+}
+.cards2 {
+  display: block;
+}
+
+.cards h3,
+.cards2 h3 {
+  font-size: 22px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 1px;
+}
+
+
+
+.cards p,
+.cards2 p {
+  font-size: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card {
+  width: 100%; /* Full width for mobile */
+  margin-bottom: 20px; /* Adjust the spacing between cards as needed */
+}
+
+
+
+.cards,
+.cards2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+  /* Buttons for the cards */
+.buttoncard- {
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 160px;
+  font-size: 13px;
+}
+
+.buttoncard- {
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  display: inline-block;
+  padding: 30px;
+  width: 28%;
+  height: 210%;
+  background-color: #222;
+  color: white;
+  padding-right: 7px;
+  padding-left: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.buttoncard- i {
+  padding-right: 6px;
+}
+
+.buttoncard-:hover,
+.buttoncard-:focus {
+  background-color: #c78c06;
+  color: inherit;
+}
+
+.buttoncard-2 {
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  display: inline-block;
+  padding: 30px;
+  width: 28%;
+  height: 210%;
+  background-color: #222;
+  color: white;
+  padding-right: 7px;
+  padding-left: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.buttoncard-2 i {
+  padding-right: 6px;
+}
+
+.buttoncard-2:hover,
+.buttoncard-2:focus {
+  background-color: #c78c06;
+  color: inherit;
+}
+
+
+/* Vision Section */
+.vision-div {
+  background-image: url(../images/vision.jpg);
+  background-size: 100%;
+  height:  180px;
+  background-position: center;
+  position: relative;
+  color: white;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.vision-div p {
+  font-size: 10px;
+  padding-bottom: 32px;
+  margin-bottom: 0;
+}
+
+.vision-div h2 {
+  font-size: 23px;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+
+/* button for our vision section */
+.button-vision {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  color: white;
+  border: 1px solid #c78c06;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 1px;
+
+}
+
+
+.button-vision:hover,
+.button-vision:focus {
+  background-color: #c78c06;
+  color: inherit;
+}
+
+/* TEAM CARDS */
+/* adjusting the space on the sides */
+.team-div {
+  padding-left: 3%; 
+  padding-right: 3%;
+  }
+
+.team-div h2 {
+  font-size: 33px;
+}
+
+.card-t1,
+.card-t2 {
+  display: block;
+  margin: 0;
+  width: 100%;
+  background-color: #ffe6ac;
+}
+
+.card-t1 h3 {
+  font-size: 21px;
+  padding-left: 2%; 
+  padding-right: 2%;
+}
+
+.card-t2 h3 {
+  font-size: 21px;
+  padding-left: 2%; 
+  padding-right: 2%;
+}
+
+.card-t1 h4{
+  font-size: 11px;
+  padding-left: 2%; 
+  padding-right: 2%;
+  border-bottom: 2px solid #c78c06;
+}
+
+.card-t2 h4{
+  font-size: 10px;
+  padding-left: 2%; 
+  padding-right: 2%;
+  border-bottom: 2px solid #c78c06;
+}
+
+.card-t1 p,
+.card-t2 p {
+  font-size: 9.6px;
+  padding-left: 2%; 
+  padding-right: 2%;
+}
+
+.card-t1 {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.card-t2 {
+  width: 100%;
+}
+
+.card-t1 img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card-t2 img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+/* CONTACT FORM */
+/* Add padding to the contact form section */
+.form-left {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.wrapper-contact {
+  padding-left: 3%;
+  padding-right: 3%;
+ 
+}
+
+.wrapper-contact h2 {
+  font-size: 33px;
+}
+
+/* form */
+.form-left {
+ 
+  font-size: 15px;
+  width: 100%;
+}
+
+.form-left h3 {
+  font-size: 22px;
+}
+
+.form-left label {
+  font-size: 10px; /* Adjust the font size of the form */
+}
+
+.form-labels {
+  display: block;
+  width: 100%;
+  height: 18px;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+input {
+  border: none;
+  box-shadow: 0 0 1px 1px grey;
+}
+
+.form-element {
+  display: block;
+  width: 100%;
+  height: 90px;
+  margin-top: 0.5em;
+  border: none;
+  box-shadow: 0 0 1px 1px grey;
+}
+
+textarea {
+  resize: none;
+  padding-top: 5px;
+}
+
+.form-left button {
+  background-color: #222;
+  border: none;
+  color: #c78c06;
+  font-size: 15px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 2px;
+  margin-top: 15px;
+}
+
+.form-left button:hover,
+.form-left button:focus {
+  background-color: #c78c06;
+  color: inherit;
+}
+
+/*  TABLE */
+
+/********** STYLING A TABLE *********/
+
+.table h3 {
+  font-size: 20.4px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  font-size: 9px;
+  padding-left: 15px;
+  border: 1px solid #000;
+  height: 30px;
+  width: 50px;
+}
+
+th {
+  background-color: #ffe6ac;
+  font-weight: 400;
+}
+
+
+
+/* MAP */
+.map-right h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.map-right iframe {
+  width: 100%;
+  height: 350px; /* Adjust as needed */
+  border: 0;
+  margin-bottom: 10px;
+  padding-right: 3%;
+
+}
+
+/* FOOTER */
+.footer {
+  background-color: #222;
+  color: #c78c06;
+  padding-left: 3%;
+  padding-top: 14px;
+  font-size: 11px;
+  height: 64px
+}
+
+
+/* DESKTOP VERSION */
+/* Add a min-width media query for the screen size of 760px and above */
+@media screen and (min-width: 760px) {
+
+/* Setting max-width and center the container */
+.max-mar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/********** NAV *********/
+
+
+
+/* welcome banner section */
+.welcomebanner {
+  background-image: url(../images/main-banner.jpg);
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+  height: 528px;
+  width: 100%;
+}
+
 .welcome-content {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
   margin-left: 8.3%;
   margin-right: 8.3%;
+  width: 82%;
   margin-top: 3.4%;
-  padding-bottom: 9%;
+  padding-bottom: 3%;
   display: flex;
   flex-direction: column;
-  padding-left: 1em; /* paddint left for spacing between text and background color */
+  padding-left: 1em;
 }
 
 .welcome-content h1 {
-  font-size: 75px; 
+  font-size: 75px;
   color: white;
   margin-bottom: 1%;
 }
@@ -91,12 +606,11 @@ body {
   font-size: 14px;
 }
 
-/* Styling connect with us button */
 .button-connect {
   position: absolute;
-  bottom: 0.6em; 
+  bottom: 0.6em;
   left: 0.6em;
-  padding-left: 1.5em; 
+  padding-left: 1.5em;
   width: 220px;
   height: 92px;
   display: flex;
@@ -107,270 +621,314 @@ body {
   font-size: 20px;
 }
 
-/* Styling arrow icon */
 .button-connect i {
-  margin-left: 25px; /* Adjusted margin for better spacing */
+  margin-left: 25px;
   font-size: 20px;
-  padding-right: 1.5em;;
+  padding-right: 1.5em;
   padding-bottom: 0.3em;
 }
 
 /********** ABOUT US SECTION *********/
 
-/* background color same size as nav and banner img */
 .wrapper-about {
   background-color: #ffe6ac;
-  max-width: 1200%;
-}
-
-/* Flex allows us to move our contect the way we want to */
-.wrapper-about {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container horizontally */
   display: flex;
-
+  align-items: center; /* Center items vertically */
+  justify-content: space-between;
 }
 
 .about-div {
   display: flex;
+  flex: 1; /* Use remaining space in the flex container */
 }
 
-
-
-/* About us heading spacing and font size */
-.about-div h2 {
-  font-size: 75px;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-/* About us paragraph spacing and font size*/
-.about-div p {
-  padding-right: 30%;
-  font-size: 18px;
-}
-
-
-
-/* Image */
 .about-div img {
-  height: 250px;
-  width: 1145px; 
-  padding-top: 0.8em;
-  padding-left:120px;
-  padding-right: 1em;
-  padding-bottom: 1em;
-  
+  width: 47%;
+  margin-right: 2%; /* Adjusted margin to the right */
 }
 
-/* About us heading spacing and font size */
+.about-div div {
+  flex: 1; /* Use remaining space within the about-div */
+  padding: 0 20px; /* Add padding to the right for better spacing */
+}
+
 .about-div h2 {
-  font-size:45px;
+  font-size: 34px;
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
-/* About us paragraph spacing and font size*/
 .about-div p {
-  padding-right: 30%;
-  font-size: 15px;
+  /* Add your desired styles for paragraphs */
 }
 
 
 
-/* Styling all cards the same */
+
+/* services */
+
 .wrapper-services {
-  padding-left: 120px;
-  padding-right: 100px;
-}
-
-.wrapper-services h2 {
-  margin-bottom: 6px;
-  margin-top: 25px;
-  font-size: 47px;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .card {
-    background-color: #ffe6ac;
-    margin-bottom: 1em;
-    width:48.5%;
+  background-color: #ffe6ac;
+  margin-bottom: 1em;
+  width: 48.5%;
 }
 
-  .card img {
-    width: 100%;
-  }
-  
-
-  .card .info {
-    padding: 1em;
-  }
-
-  .card h3 {
-    font-size: 31px;
-    margin-top: 0;
-  }
-
-  .card p {
-    font-size: 14px;
-  }
-
-/* Digital and Marketing cards next to eachother on desktop style */
-  .cards {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 1em; 
-    padding-left: 120px;
-    padding-right: 91px;
+.card img {
+  width: 100%;
+  padding-left: 0;
 }
 
+.card .info {
+  padding: 1em;
+}
 
+.card h3 {
+  font-size: 30px;
+  margin-top: 0;
+  padding-left: 0;
+}
 
-/* Styling digital and marketing card buttons */
+.card p {
+  font-size: 13px;
+  padding-left: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: row;
+  padding-left: 63px;
+  padding-right: 45px;
+  justify-content: space-between; /* Added to ensure space between cards */
+}
 
 .buttoncard- {
-    text-decoration: none;
-    text-align: center;
-    font-size: 22px;
-    display: inline-block;
-    padding: 30px;
-    width: 92%;
-    height: 210%;
-    background-color: #222;
-    color: white;
-    padding-right: 7px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 22px;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 1px;
+  padding: 30px;
+  width: 93%; 
+  height: 210%;
+  background-color: #222;
+  color: white;
+  padding-right: 7px;
 }
 
 .buttoncard- i {
- padding-left: 15px;  
- 
+  padding-left: 15px;
 }
-
 
 .buttoncard-:hover,
 .buttoncard-:focus {
-    background-color: #c78c06;
-    color: inherit;
+  background-color: #c78c06;
+  color: inherit;
 }
-
-
 
 .cards2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
+  padding-left: 63px;
+  padding-right: 63px;
+
 }
 
-
-.cards2 {
-  padding-left: 120px;
-  padding-right: 107px;
-}
-
-
-/* Adjusted width for video, web, and print cards */
-.card.card3 {
-  width: 100%; /* Adjust the width as needed */
-}
-
-.card.card4 {
-  width: 100%; /* Adjust the width as needed */
-}
-
+.card.card3,
+.card.card4,
 .card.card5 {
-  width: 100%; /* Adjust the width as needed */
+  width: 100%;
 }
 
-/* Styling buttons for video, web and print */
 .buttoncard-2 {
   padding-right: 1px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 22px;
-    display: inline-block;
-    padding: 30px;
-    width: 88%;
-    height: 210%;
-    background-color: #222;
-    color: white;
-    padding-right: 7px;
+  margin-left: 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: 22px;
+  display: block;
+  padding: 30px;
+  width: 81.5%; 
+  margin-bottom: 1px;
+  height: 210%;
+  background-color: #222;
+  color: white;
 }
 
 .buttoncard-2 i {
- padding-left: 15px;  
- 
+  padding-left: 15px;
 }
-
 
 .buttoncard-2:hover,
 .buttoncard-2:focus {
-    background-color: #c78c06;
-    color: inherit;
+  background-color: #c78c06;
+  color: inherit;
 }
 
 .services-div h2 {
-  padding-left: 120px;
+  padding-left: 70px;
   font-size: 50px;
   margin-bottom: 10px;
 }
 
 
-/********** SECOND BANNER *********/
-
+/* our vision */
 .vision-div {
   background-image: url(../images/vision.jpg);
   background-size: 100%;
-  background-position: center; /* Adjustebanner image position */
+  background-position: center;
   position: relative;
-  height: 260px; /* Adjusted height */
+  height: 260px;
   width: 100%;
   color: white;
-
-
+  padding-left: 55px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .vision-div p {
-  font-size: 14px;
-  padding-left: 120px;
-  padding-right: 115px;
+  font-size: 14.9px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 32px;
+  margin-bottom: 12px;
 }
 
 .vision-div h2 {
-  padding-top: 32px;
-  padding-left: 120px;
-  font-size: 32px;
+  padding-top: 30px;
+  padding-left: 50px;
+  font-size: 34px;
 }
 
-
-
-/* Styling button for Our Vision */
 .button-vision {
   background-color: rgba(0, 0, 0, 0.6);
-  margin-left: 120px;
   text-decoration: none;
   color: white;
   border: 1px solid #c78c06;
   padding: 30px;
-  font-size: 23px;
+  font-size: 25px;
 }
 
-
+.button-vision {
+  margin-left: 50px;
+}
 
 .button-vision i {
- padding-left: 15px;  
- 
+  padding-left: 0px;
 }
-
 
 .button-vision:hover,
 .button-vision:focus {
-    background-color: #c78c06;
-    color: inherit;
+  background-color: #c78c06;
+  color: inherit;
 }
 
-/* OUR TEAM */
+/********** OUR TEAM SECTION *********/
 
-.wrapper-team h2{
+.wrapper-team h2 {
   font-size: 50px;
-  padding-left: 120px;
-  margin-top: 20px;
-  margin-bottom: 2px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* Apply styles to the wrapper-team section */
+.wrapper-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Set z-index to make it appear on top */
+  padding-left: 65px;
+  padding-right: 47px;
+}
+
+/* Apply styles to the card-t1 and card-t2 elements */
+.card-t1,
+.card-t2 {
+  background-color: #ffe6ac;
+  display: flex;
+  align-items: center;
+
+}
+
+/* Apply styles to the image inside the cards */
+.card-t1 img,
+.card-t2 img {
+  width: 50%; /* Make the image fill its container */
+}
+
+
+/* Add styles for h3, h4, and p inside the info div */
+.card-t1 h3,
+.card-t2 h3 {
+  padding-left: 11px;
+  padding-right: 20px;
+  margin-top: 0;
+  font-size: 30px;
+
+}
+
+
+
+.card-t1 h4,
+.card-t2 h4 {
+  margin-bottom: 5px;
+  margin-left: 1em;
+  border-bottom: 2px solid #c78c06;
+  margin-right: 1em;
+  font-size: 15px;
+
+}
+
+.card-t1 p,
+.card-t2 p {
+  font-size: 13.5px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 10px;
+}
+
+
+/* Move the image to the right in card-t2 */
+.card-t2 {
+  flex-direction: row-reverse; /* Reverse the order of flex items */
+}
+
+
+/********** CONTACT FORM *********/
+
+.contact-div {
+  padding-left: 65px;
+  padding-right: 47px;
+}
+
+.table {
+  height: 100%;
+}
+
+
+/********** STYLING FOOTER *********/
+
+.footer {
+  background-color: #222;
+  height: 60px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.footer p {
+  color: #c78c06;
+  padding-left: 63px;
+}
+
+
+
 }
